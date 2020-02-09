@@ -12,3 +12,36 @@ footer {
   font-size: 16px;
   text-align: center;
 }
+
+.timeline {
+  background-color: #252827;
+  color: white;
+}
+.timeline > ol {
+  display: flex;
+  flex-direction: column;
+}
+.timeline > ol > li {
+  display: flex;
+}
+.timeline > ol > li > .left {
+  width: 50%;
+  padding: 24px;
+  text-align: right;
+  font-weight: 200;
+}
+.timeline > ol > li > .left::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.timeline > ol > li > .right {
+  width: 50%;
+  padding: 24px;
+  font-size: 1.2rem;
+}
