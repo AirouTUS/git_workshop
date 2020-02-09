@@ -2,6 +2,17 @@ body {
   background: white;
 }
 
+footer {
+  width: 100%;
+  line-height: 60px;
+  background-color: #EC715F;
+}
+
+#copyright {
+  font-size: 16px;
+  text-align: center;
+}
+
 .timeline {
   background-color: #252827;
   color: white;
