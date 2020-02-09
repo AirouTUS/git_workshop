@@ -72,50 +72,17 @@
             <li>バドミントンサークル a-jump!に所属</li>
             <li>Ruby on Railsを用いたエンジニアインターンシップに参加中</li>
           </ul>
-          <table class="table">
+          <table class="table" id="vue2">
             <caption>活動日</caption>
             <thead>
               <tr>
-                <th>活動名</th>
-                <th>日</th>
-                <th>月</th>
-                <th>火</th>
-                <th>水</th>
-                <th>木</th>
-                <th>金</th>
-                <th>土</th>
+                <th v-for="column in columns">{{ column }}</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th>Unitus</th>
-                <td>△ </td>
-                <td>◯ </td>
-                <td>◯ </td>
-                <td>◯ </td>
-                <td>◯ </td>
-                <td>◯ </td>
-                <td>△ </td>
-              </tr>
-              <tr>
-                <th>a-jump!</th>
-                <td>-</td>
-                <td>◯ </td>
-                <td>-</td>
-                <td>-</td>
-                <td>◯ </td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <th>EIC</th>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>◯ </td>
-                <td>-</td>
-                <td>-</td>
+              <tr v-for="row in rows">
+                <th>{{ row.title }}</th>
+                <td v-for="cell in row.data">{{ cell | toIcon }}</td>
               </tr>
             </tbody>
           </table>
