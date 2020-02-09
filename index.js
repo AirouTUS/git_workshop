@@ -37,3 +37,27 @@ const app2 = new Vue({
     }
   }
 })
+
+const app3 = new Vue({
+  el: '#vue3',
+  data: {
+    history: [
+      {
+        date: 1999,
+        content: "東京都の西の方に生まれる"
+      },{
+        date: 2006,
+        content: "東京都の西の方の小学校に入学"
+      },{
+        date: 2012,
+        content: "中学受験を経て、埼玉の下の方にある大学附属中学校に入学"
+      },{
+        date: 2015,
+        content: "そのまま高校に進学"
+      },{
+        date: 2018,
+        content: "東京理科大学に入学"
+      }
+    ]
+  }
+})
