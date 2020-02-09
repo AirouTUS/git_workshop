@@ -21,46 +21,14 @@
           </header>
           <h2 class="heading-typeA">自己紹介</h2>
           <p>中学の時からアイドルが好きで高校３年生まで色々なイベントに参加してました。また今までには空手、テニスをしていました。</p>
-          <div class="timeline">
+          <div class="timeline" id="vue3">
             <ol>
-              <li>
+              <li v-for="point in history">
                 <div class="left">
-                  1999
+                  {{ point.date }}
                 </div>
                 <div class="right">
-                  東京都の西の方に生まれる
-                </div>
-              </li>
-              <li>
-                <div class="left">
-                  2006
-                </div>
-                <div class="right">
-                  東京都の西の方の小学校に入学
-                </div>
-              </li>
-              <li>
-                <div class="left">
-                  2012
-                </div>
-                <div class="right">
-                  中学受験を経て、埼玉の下の方にある大学附属中学校に入学
-                </div>
-              </li>
-              <li>
-                <div class="left">
-                  2015
-                </div>
-                <div class="right">
-                  そのまま高校に進学
-                </div>
-              </li>
-              <li>
-                <div class="left">
-                  2018
-                </div>
-                <div class="right">
-                  東京理科大学に入学
+                  {{ point.content }}
                 </div>
               </li>
             </ol>
