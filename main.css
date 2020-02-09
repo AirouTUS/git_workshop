@@ -1,3 +1,35 @@
 body {
   background: white;
 }
+.pageTitle{
+    border-left: solid 4px #1e90ff;
+    border-bottom: solid 2px #1e90ff;
+    height: auto;
+    display: inline-block;
+}
+h2{
+    border-left: solid 4px #1e90ff;
+    border-bottom: solid 2px #1e90ff;
+    background: #afeeee;
+    display: inline-block;
+    padding: 0 0.3em;
+    margin: 0.5em 0;
+}
+.header{
+    background-color: black;
+    height: 60px;
+    position: relative;
+}
+.headertag{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    
+}
+.headerlist{
+    margin: 20px;
+    color: white;
+}
+
+
+
