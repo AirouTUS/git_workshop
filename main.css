@@ -45,3 +45,24 @@ footer {
   padding: 24px;
   font-size: 1.2rem;
 }
+#header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_img {
+  weight: 50%;
+  height: 180px;
+  margin-right: 10px;
+}
+#siteTitle {
+  font-size: 45px;
+  font-weight: bold;
+}
+#subTitle {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 15px;
+  float: right;
+}
+
